@@ -1,0 +1,2 @@
+# utl_exporting_longtext_fields_to_ms_access
+Exporting longtext fields(up to 2gb) to MS Access   Steps    1. SAS comes with a sample Acess database (SAS and R cannot create a MS access database?)      C:\Program Files\sashome\SASFoundation\9.4\access\sasmisc\demo.accdb      Copy this accdb to d:/mdb/longtext.accdb   2. Create a MS Access table 'longtext' using sashelp.class.   3. Use passthru 'ADD column 'txt' with 'memo' field (max 2gb?) (memo was changed to longtext after 2010)   4. Use passthru and a macro variable(max length ~65k) to update the longtext table
